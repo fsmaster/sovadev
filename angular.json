@@ -57,6 +57,10 @@
           "defaultConfiguration": "production"
         },
         "serve": {
+          "options": {
+            "sslKey": "/etc/letsencrypt/live/dev.sovatalk.com/privkey.pem",
+            "sslCert": "/etc/letsencrypt/live/dev.sovatalk.com/cert.pem"
+          },
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
